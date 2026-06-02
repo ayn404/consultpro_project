@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Industries | ConsultPro</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+    }
+
+    /* HEADER */
+    .header {
+      background: black;
+      padding: 20px 60px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+    }
+
+    .logo span {
+      color: #86BC25;
+    }
+
+    .nav {
+      display: flex;
+      gap: 25px;
+      align-items: center;
+    }
+
+    .nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+    /* DROPDOWN */
+    .dropdown {
+      position: relative;
+    }
+
+    .dropbtn {
+      color: white;
+      text-decoration: none;
+      padding: 10px 0;
+      display: inline-block;
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #222;
+      min-width: 180px;
+      z-index: 999;
+    }
+
+    .dropdown-menu a {
+      display: block;
+      padding: 10px 15px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .dropdown-menu a:hover {
+      background: #333;
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    /* HERO */
+    .hero {
+      padding: 80px 60px;
+      background: #1a1a1a;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      color: #bbb;
+      max-width: 600px;
+    }
+
+    /* INDUSTRIES GRID SECTION */
+    .industry-section {
+      padding: 80px 60px;
+    }
+
+    .industry-section h2 {
+      margin-bottom: 30px;
+      font-size: 32px;
+    }
+
+    .grid-container {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .industry-card {
+      background: white;
+      padding: 30px;
+      flex: 1;
+      min-width: 280px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+      border-top: 5px solid #86BC25;
+    }
+
+    .industry-card h3 {
+      margin-top: 0;
+      color: #1a1a1a;
+    }
+
+    .industry-card p {
+      color: #555;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    /* BOTTOM CTA SECTION */
+    .cta-section {
+      background: #e1e1e1;
+      padding: 60px 60px;
+      text-align: center;
+    }
+
+    .cta-section h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #111;
+      color: white;
+      padding: 40px 60px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="header">
+  <div class="container">
+    <a href="page2.html" class="logo">Consult<span>Pro</span></a>
+    <nav class="nav">
+      <div class="dropdown">
+        <a href="#" class="dropbtn">Services ▾</a>
+        <div class="dropdown-menu">
+          <a href="ai.html">AI & Engineering</a>
+          <a href="cyber.html">Cyber Security</a>
+          <a href="cloud.html">Cloud</a>
+          <a href="data.html">Data & Analytics</a>
+        </div>
+      </div>
+      <a href="industries.html">Industries</a>
+      <a href="insights.html">Insights</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <h1>Industries We Serve</h1>
+  <p>We deliver tailored technology and data strategies across diverse sectors to unlock sustainable operational growth.</p>
+</section>
+
+<section class="industry-section">
+  <h2>Our Core Sectors</h2>
+  <div class="grid-container">
+    
+    <div class="industry-card">
+      <h3>Technology & Media</h3>
+      <p>Accelerating product engineering, data scaling, and artificial intelligence deployments for fast-growing platforms.</p>
+    </div>
+
+    <div class="industry-card">
+      <h3>Financial Services</h3>
+      <p>Optimizing risk management, advanced metrics analytics, and secure modern digital payment frameworks.</p>
+    </div>
+
+    <div class="industry-card">
+      <h3>Energy & Utilities</h3>
+      <p>Driving operational efficiency and infrastructure modernization using smart data monitoring systems.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="cta-section">
+  <h3>Looking for expert insights built for your field?</h3>
+  <p>Head over to our report page or get in touch directly to see how we help businesses evolve.</p>
+</section>
+
+<footer>
+  <p>© 2026 ConsultPro. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

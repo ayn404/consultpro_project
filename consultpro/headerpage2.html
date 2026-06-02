@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test Header</title>
+
+  <style>
+   
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    
+    .header {
+      background: black;
+      padding: 20px 60px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+   
+    .logo {
+      font-size: 26px;
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+    }
+
+    .logo span {
+      color: #86BC25;
+    }
+
+    /* NAV */
+    .nav {
+      display: flex;
+      gap: 25px;
+      align-items: center;
+    }
+
+    .nav a {
+      color: white;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+
+    .nav a:hover {
+      opacity: 0.7;
+    }
+
+    .dropdown {
+      position: relative;
+      cursor: pointer;
+      color: white;
+    }
+
+    .dropdown-menu {
+      position: absolute;
+      top: 25px;
+      left: 0;
+      background: #222;
+      padding: 10px;
+      display: none;
+      min-width: 180px;
+    }
+
+    .dropdown-menu a {
+      display: block;
+      padding: 6px 10px;
+      color: white;
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    
+    .contact-btn {
+      background: #86BC25;
+      color: black;
+      padding: 8px 16px;
+      border-radius: 20px;
+    }
+
+    .contact-btn:hover {
+      transform: scale(1.05);
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+
+      <a href="page2.html" class="logo">
+        Consult<span>Pro</span>
+      </a>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+
+        <div class="dropdown">
+          <span>Services ▾</span>
+          <div class="dropdown-menu">
+            <a href="ai.html">AI & Engineering</a>
+            <a href="cyber.html">Cyber Security</a>
+            <a href="cloud.html">Cloud</a>
+            <a href="data.html">Data & Analytics</a>
+          </div>
+        </div>
+
+        <a href="industries.html">Industries</a>
+        <a href="insights">Insights</a>
+        <a href="contact.html" class="contact-btn">Contact</a>
+      </nav>
+
+    </div>
+  </header>
+
+  
+  <div style="padding: 60px;">
+    <h1>Page Content</h1>
+    <p>This is just a test page.</p>
+  </div>
+
+</body>
+</html>

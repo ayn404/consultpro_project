@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="result1"></div>
+<div id="result2"></div>
+<div id="result3"></div>
+<div id="result4"></div>
+<div id="result5"></div>
+<div id="result6"></div>
+
+<script>
+
+const x1 = document.getElementById("result1");
+const x2 = document.getElementById("result2");
+const x3 = document.getElementById("result3");
+const x4 = document.getElementById("result4");
+const x5 = document.getElementById("result5");
+const x6 = document.getElementById("result6");
+
+
+if (typeof(Storage) !== "undefined") {
+
+ 
+  localStorage.setItem("name1", "Ali");
+  localStorage.setItem("name2", "Ahmed");
+  localStorage.setItem("name3", "Sara");
+  localStorage.setItem("name4", "Zain");
+  localStorage.setItem("name5", "Hassan");
+  localStorage.setItem("name6", "Ayesha");
+
+
+  x1.innerHTML = localStorage.getItem("name1");
+  x1.style.backgroundColor = "red";
+
+  x2.innerHTML = localStorage.getItem("name2");
+  x2.style.backgroundColor = "blue";
+
+  x3.innerHTML = localStorage.getItem("name3");
+  x3.style.backgroundColor = "red";
+
+  x4.innerHTML = localStorage.getItem("name4");
+  x4.style.backgroundColor = "blue";
+
+  x5.innerHTML = localStorage.getItem("name5");
+  x5.style.backgroundColor = "red";
+
+  x6.innerHTML = localStorage.getItem("name6");
+  x6.style.backgroundColor = "blue";
+
+} else {
+  x1.innerHTML = "Sorry, no Web storage support!";
+}
+
+</script>
+
+</body>
+</html>

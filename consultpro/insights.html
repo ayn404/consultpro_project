@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Insights | ConsultPro</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+    }
+
+    /* HEADER */
+    .header {
+      background: black;
+      padding: 20px 60px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+    }
+
+    .logo span {
+      color: #86BC25;
+    }
+
+    .nav {
+      display: flex;
+      gap: 25px;
+      align-items: center;
+    }
+
+    .nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+    /* DROPDOWN */
+    .dropdown {
+      position: relative;
+    }
+
+    .dropbtn {
+      color: white;
+      text-decoration: none;
+      padding: 10px 0;
+      display: inline-block;
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #222;
+      min-width: 180px;
+      z-index: 999;
+    }
+
+    .dropdown-menu a {
+      display: block;
+      padding: 10px 15px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .dropdown-menu a:hover {
+      background: #333;
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    /* HERO */
+    .hero {
+      padding: 80px 60px;
+      background: #1a1a1a;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      color: #bbb;
+      max-width: 600px;
+    }
+
+    /* DESCRIPTION BRIEF SECTION */
+    .insight-section {
+      padding: 80px 60px;
+      display: flex;
+      gap: 60px;
+      flex-wrap: wrap;
+    }
+
+    /* DESCRIPTION BOX */
+    .description-box {
+      background: white;
+      padding: 40px;
+      flex: 1.5;
+      min-width: 300px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    .description-box h2 {
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+
+    .description-box p {
+      color: #444;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    /* SIDE KEYPOINTS BOX */
+    .takeaway-box {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .key-item {
+      margin-bottom: 25px;
+      border-left: 4px solid #86BC25;
+      padding-left: 15px;
+    }
+
+    .key-item h4 {
+      margin: 0 0 5px 0;
+      font-size: 20px;
+      color: #86BC25;
+    }
+
+    .key-item p {
+      margin: 0;
+      color: #555;
+      font-size: 14px;
+    }
+
+    /* SECTION 3: EXPERT HIGHLIGHT */
+    .expert-panel {
+      background: #1a1a1a;
+      color: white;
+      padding: 40px 60px;
+      text-align: center;
+    }
+
+    .expert-panel h3 {
+      margin: 0 0 5px 0;
+    }
+
+    .expert-panel p {
+      color: #86BC25;
+      margin: 0;
+      font-weight: bold;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #111;
+      color: white;
+      padding: 40px 60px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="header">
+  <div class="container">
+    <a href="page2.html" class="logo">Consult<span>Pro</span></a>
+    <nav class="nav">
+      <div class="dropdown">
+        <a href="#" class="dropbtn">Services ▾</a>
+        <div class="dropdown-menu">
+          <a href="ai.html">AI & Engineering</a>
+          <a href="cyber.html">Cyber Security</a>
+          <a href="cloud.html">Cloud</a>
+          <a href="data.html">Data & Analytics</a>
+        </div>
+      </div>
+      <a href="industries.html">Industries</a>
+      <a href="insights.html">Insights</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <h1>Industry Insights & Analysis</h1>
+  <p>Explore our deep dive reports on how companies utilize information architecture to stay ahead of market curves.</p>
+</section>
+
+<section class="insight-section">
+
+  <div class="description-box">
+    <h2>The 2026 Industrial Tech Report</h2>
+    <p>Modern industrial landscapes generate unparalleled pipelines of business and system details. However, research proves a large percentage of this infrastructure data remains completely locked away and unused.</p>
+    <p>By building clear, modern data processes and migrating to scalable platforms, forward-thinking organizations are identifying logistics blockages, preventing system downtime, and mapping out transparent long-term strategies.</p>
+  </div>
+
+  <div class="takeaway-box">
+    <h2>Key Takeaways</h2>
+
+    <div class="key-item">
+      <h4>70% System Data</h4>
+      <p>The average amount of industrial cloud pipeline statistics left unmonitored.</p>
+    </div>
+
+    <div class="key-item">
+      <h4>3.5x Pivot Speed</h4>
+      <p>Achieved by setups that integrate modern real-time tracking metrics.</p>
+    </div>
+
+    <div class="key-item">
+      <h4>Long-Term Value</h4>
+      <p>Smarter data choices directly translate to better operational control.</p>
+    </div>
+  </div>
+
+</section>
+
+<section class="expert-panel">
+  <h3>Report Compiled By</h3>
+  <p>Ali Raza — Cloud Infrastructure Lead</p>
+</section>
+
+<footer>
+  <p>© 2026 ConsultPro. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

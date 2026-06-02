@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Data & Analytics</title>
+
+  
+
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- LINK CSS -->
+  <link rel="stylesheet" href="testpage.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <h1>Consult<span style="color:#86BC25;">Pro</span></h1>
+
+  <nav>
+    <div class="dropdown">
+      <span>Services ▾</span>
+      <div class="dropdown-menu">
+        <a href="#">AI & Engineering</a>
+        <a href="#">Cyber Security</a>
+        <a href="#">Cloud</a>
+        <a href="#">Data & Analytics</a>
+      </div>
+    </div>
+
+    <a href="#">Industries</a>
+    <a href="#">Insights</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+
+<section class="dark">
+  <h2>Data that drives smarter decisions</h2>
+  <p>Transform raw data into actionable insights.</p>
+</section>
+
+
+<section class="light center">
+  <h2>Our Capabilities</h2>
+
+  <div class="flex center">
+    <div class="card">
+      <h3>Data Processing</h3>
+      <p>Clean datasets efficiently.</p>
+    </div>
+
+    <div class="card">
+      <h3>Analytics</h3>
+      <p>Discover insights.</p>
+    </div>
+
+    <div class="card">
+      <h3>Visualization</h3>
+      <p>Visual storytelling.</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="black">
+
+  <div class="flex">
+
+    <div style="max-width:350px;">
+      <h2>Global Survey 2025</h2>
+      <p>Insights into Gen Z trends.</p>
+      <a href="#" class="btn">Explore</a>
+    </div>
+
+    <div style="max-width:350px;">
+      <img id="mainImage" src="car1.jpg" style="height:180px;">
+
+      <div class="flex" style="margin-top:8px;">
+        <div class="bar" onclick="manualChange(0)"><div class="fill"></div></div>
+        <div class="bar" onclick="manualChange(1)"><div class="fill"></div></div>
+        <div class="bar" onclick="manualChange(2)"><div class="fill"></div></div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="black center">
+
+  <h2>What we deliver</h2>
+
+  <div class="flex center">
+
+    <div>
+      <svg width="60" height="60">
+        <circle cx="30" cy="30" r="25" fill="#86BC25"/>
+      </svg>
+      <h3>Data Intelligence</h3>
+      <p>Strategic data usage.</p>
+    </div>
+
+    <div>
+      <svg width="60" height="60">
+        <rect x="10" y="10" width="40" height="40" fill="#86BC25"/>
+      </svg>
+      <h3>Cloud</h3>
+      <p>Scalable systems.</p>
+    </div>
+
+    <div>
+      <svg width="60" height="60">
+        <polygon points="30,5 55,55 5,55" fill="#86BC25"/>
+      </svg>
+      <h3>Growth</h3>
+      <p>Long-term success.</p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="dark center">
+
+  <h2>Talk to our experts</h2>
+
+  <img id="contactImage" src="man1.jpg" class="avatar">
+
+  <h3 id="contactName">John Doe</h3>
+  <p id="contactRole">Senior Consultant</p>
+
+  <a href="#" class="btn">Contact</a>
+
+  <div class="flex" style="margin-top:10px;">
+    <div class="cbar"><div class="cfill"></div></div>
+    <div class="cbar"><div class="cfill"></div></div>
+    <div class="cbar"><div class="cfill"></div></div>
+  </div>
+
+</section>
+
+
+
+<footer>
+
+  <div class="flex" style="justify-content:space-between; flex-wrap:wrap;">
+
+    <div>
+      <h4>Services</h4>
+      <p>Consulting</p>
+      <p>AI</p>
+    </div>
+
+    <div>
+      <h4>Industries</h4>
+      <p>Tech</p>
+      <p>Finance</p>
+    </div>
+
+    <div>
+      <h4>Insights</h4>
+      <p>Reports</p>
+      <p>Research</p>
+    </div>
+
+  </div>
+
+  <p style="margin-top:20px;">© 2026 ConsultPro</p>
+
+</footer>
+
+
+<script>
+
+
+const images = ["car1.jpg","car2.jpg","car3.jpg"];
+let current = 0;
+let progress = 0;
+
+const img = document.getElementById("mainImage");
+const fills = document.querySelectorAll(".fill");
+
+setInterval(()=>{
+  progress+=1;
+  fills[current].style.width = progress+"%";
+
+  if(progress>=100){
+    progress=0;
+    fills.forEach(f=>f.style.width="0%");
+    current=(current+1)%images.length;
+    img.src=images[current];
+  }
+},30);
+
+function manualChange(i){
+  current=i;
+  progress=0;
+  fills.forEach(f=>f.style.width="0%");
+  img.src=images[current];
+}
+
+
+
+const contacts = [
+  { img: "man1.jpg", name: "John Doe", role: "Senior Consultant" },
+  { img: "woman.jpg", name: "Sarah Khan", role: "AI Specialist" },
+  { img: "man2.jpg", name: "Ali Raza", role: "Cloud Engineer" }
+];
+
+let cIndex = 0;
+let cProgress = 0;
+
+const cImg = document.getElementById("contactImage");
+const cName = document.getElementById("contactName");
+const cRole = document.getElementById("contactRole");
+const cFills = document.querySelectorAll(".cfill");
+
+setInterval(() => {
+  cProgress++;
+  cFills[cIndex].style.width = cProgress + "%";
+
+  if (cProgress >= 100) {
+    cProgress = 0;
+    cFills.forEach(f => f.style.width = "0%");
+    cIndex = (cIndex + 1) % contacts.length;
+
+    cImg.src = contacts[cIndex].img;
+    cName.textContent = contacts[cIndex].name;
+    cRole.textContent = contacts[cIndex].role;
+  }
+}, 30);
+
+</script>
+
+</body>
+</html>
